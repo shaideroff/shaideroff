@@ -14,6 +14,11 @@ I'm focused on learning by building, documenting what works, and contributing us
 - Backend engineering, APIs and system design
 - Evaluation, testing, reliability and application security
 - Open-source software and developer tools
+- Algorithm engineering, mathematical optimisation and competitive programming
+
+## Selected research and engineering
+
+- **Santa 2026 — The Elf Calculator:** independent algorithm research in exact arithmetic, instruction minimisation, search and program optimisation.
 
 ## How I work
 
