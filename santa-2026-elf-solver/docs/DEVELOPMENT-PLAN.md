@@ -1,40 +1,26 @@
-# S Haider
+# S Haider — Santa 2026 Development Plan
 
-**AI Engineer · Open-Source Developer · Technology Entrepreneur**
+## Research-backed algorithm plan
 
-I build software products and explore practical applications of AI. My work sits at the intersection of engineering, product development and entrepreneurship.
+1. **Reference layer:** exact Python integer interpreter, schema parser, validator, CSV/JSON round trip. This is the source of truth for every solver.
+2. **Trusted baseline:** download and replay official `sample_submission.csv`; record hash, score, max program length and per-puzzle vector.
+3. **Independent constructors:** positional radix portfolio; signed binary-window constructions; direct target closure; small exact constants and safe reuse.
+4. **Multi-target search:** reachable-value dictionary, target-order variants, common factors/differences, bounded beam and backward meet-in-the-middle.
+5. **DAG-level optimisation:** shared-expression extraction, local graph resynthesis, peephole replacement, target-event preservation.
+6. **Register allocation:** liveness-aware physical assignment over 48 registers; verify register overwrites and semantics after lowering.
+7. **Portfolio selection:** keep shortest valid program per puzzle and preserve best-known fallback. Never accept a candidate solely on estimated cost.
+8. **Release gate:** validate every one of the 1,000 IDs, round-trip the actual CSV, validate again, check all size limits and archive hashes before manual submission.
 
-I'm focused on learning by building, documenting what works, and contributing useful work to the developer ecosystem.
+## Open-source research
 
-## Current focus
+- `Juan-Severiano/santa-2026`: https://github.com/Juan-Severiano/santa-2026 — accepted 132,515 checkpoint reported in README; deterministic radix/window portfolio, Python exact validator and extensive repair work. README and THIRD_PARTY disclose upstream Apache-2.0 components. Provenance must travel with any derivative.
+- `robsartin/elf-abacus`: https://github.com/robsartin/elf-abacus — Apache-2.0, verifier-first Python design and optional native C kernel.
+- `Hansen0223/Santa_2026`: https://github.com/Hansen0223/Santa_2026 — local score claim 138,845; inherited public program contributions explicitly disclosed; no official receipt confirmed in inspected excerpt.
+- `Joe-You-Know/PRTA-Elf-Calculator`: https://github.com/Joe-You-Know/PRTA-Elf-Calculator — Apache-2.0, validator and experimental graph rewrites; claimed new algebraic generator remains experimental.
+- `Aman Atar notebook`: https://www.kaggle.com/code/amanatar/santa-2026-fast-validator-eda-sota-baseline/notebook — observed version 12 score 142,909 and Apache 2.0 licence.
 
-- Applied AI and LLM-powered applications
-- Agentic systems, tool use and workflow orchestration
-- Python and TypeScript development
-- Backend engineering, APIs and system design
-- Evaluation, testing, reliability and application security
-- Open-source software and developer tools
-- Algorithm engineering, mathematical optimisation and competitive programming
+Treat public Kaggle pages, programs and solver code as distinct licensing objects. Public visibility does not grant blanket code reuse. Verify licence and upstream attributions for each snapshot. Keep public-program portfolio scores separate from S Haider-authored algorithmic improvements.
 
-## Selected research and engineering
+## Execution constraints
 
-- **Santa 2026 — The Elf Calculator:** independent algorithm research in exact arithmetic, instruction minimisation, search and program optimisation.
-
-## How I work
-
-- Build for real use cases, not demos alone.
-- Prefer measurable evidence over inflated claims.
-- Keep code maintainable, documented and tested.
-- Treat security, reliability and user trust as engineering requirements.
-- Share experiments, lessons and useful resources.
-
-## Connect
-
-- [LinkedIn](https://www.linkedin.com/in/shaiderofficial/)
-- [Hugging Face](https://huggingface.co/shaideroff)
-- [DEV Community](https://dev.to/shaider)
-- [npm](https://www.npmjs.com/~shaideroff)
-
----
-
-*Building from first principles. Improving through practice. Contributing in public.*
+CPU-first; no paid API/cloud requirement. Kaggle credentials and the rule-gated data stay out of Git. Use C++/Rust only after profiling identifies an actual hotspot. No automated submission; owner performs final Kaggle submission after validating output.
