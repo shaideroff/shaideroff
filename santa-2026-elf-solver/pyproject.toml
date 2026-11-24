@@ -1,40 +1,24 @@
-# S Haider
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
 
-**AI Engineer · Open-Source Developer · Technology Entrepreneur**
+[project]
+name = "santa-2026-elf-solver"
+version = "0.1.0"
+description = "Independent exact-arithmetic solver for Kaggle Santa 2026"
+requires-python = ">=3.10"
+dependencies = []
 
-I build software products and explore practical applications of AI. My work sits at the intersection of engineering, product development and entrepreneurship.
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6"]
 
-I'm focused on learning by building, documenting what works, and contributing useful work to the developer ecosystem.
+[project.scripts]
+santa-solver = "santa_solver.cli:main"
 
-## Current focus
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
 
-- Applied AI and LLM-powered applications
-- Agentic systems, tool use and workflow orchestration
-- Python and TypeScript development
-- Backend engineering, APIs and system design
-- Evaluation, testing, reliability and application security
-- Open-source software and developer tools
-- Algorithm engineering, mathematical optimisation and competitive programming
-
-## Selected research and engineering
-
-- **Santa 2026 — The Elf Calculator:** independent algorithm research in exact arithmetic, instruction minimisation, search and program optimisation.
-
-## How I work
-
-- Build for real use cases, not demos alone.
-- Prefer measurable evidence over inflated claims.
-- Keep code maintainable, documented and tested.
-- Treat security, reliability and user trust as engineering requirements.
-- Share experiments, lessons and useful resources.
-
-## Connect
-
-- [LinkedIn](https://www.linkedin.com/in/shaiderofficial/)
-- [Hugging Face](https://huggingface.co/shaideroff)
-- [DEV Community](https://dev.to/shaider)
-- [npm](https://www.npmjs.com/~shaideroff)
-
----
-
-*Building from first principles. Improving through practice. Contributing in public.*
+[tool.ruff]
+line-length = 100
+target-version = "py310"
